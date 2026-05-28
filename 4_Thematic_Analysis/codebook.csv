@@ -1,0 +1,45 @@
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,THEME,CODE,DESCRIPTION
+,,,,,,,,,SYSTEM TYPE,GenAI,"Systems based on generative AI (e.g. LLMs, diffusion models)."
+,,,,,,,,,,Traditional ML,"Systems using classical machine learning models ( Like for e.g.  decision trees, SVMs)."
+,,,,,,,,,,Hybrid AI,Combination of symbolic AI and ML models.
+,,,,,,,,,SYSTEM MODELLING TECHNIQUE,Data Flow Diagram (DFD),Shows flow of information within the system.
+,,,,,,,,,,Unified Modeling Language (UML),Standardized system modeling notation.
+,,,,,,,,,,Software Architecture Modeling ,Models processes and workflows.
+,,,,,,,,,,Deployment Diagram,Captures hardware/software deployment of AI.
+,,,,,,,,,,Sequence Diagram,Focuses on interactions over time.
+,,,,,,,,,,Asset Inventories,Lists system assets relevant to security.
+,,,,,,,,,,Use Case Scenarios,Captures functional requirements and user interactions.
+,,,,,,,,,SUPPORTING ARTIFACTS,Attack Trees,Hierarchical diagrams modeling possible attacks.
+,,,,,,,,,,Risk Cases,Scenarios describing risks and their consequences.
+,,,,,,,,,,Threat Catalogs,"Predefined list of threats (e.g., adversarial ML threats)."
+,,,,,,,,,TOOL SUPPORT,Full automation,Tool performs complete threat modelling automatically.
+,,,,,,,,,,Semi-automated,"Tool exists but requires manual input ( for e.g., annotations, labeling)."
+,,,,,,,,,,No tool support,Entirely manual process.
+,,,,,,,,,EVALUATION,Usability study,Assesses applicability or ease of use.
+,,,,,,,,,,Case study,Performance tested on a real-world case.
+,,,,,,,,,,Ad-hoc dataset,Tested on synthetic or small dataset.
+,,,,,,,,,,Tool benchmark,Compared to other tools on same dataset/test.
+,,,,,,,,,,Proof of concept,"Only conceptual demonstration, no real evaluation."
+,,,,,,,,,LIMITATIONS,Scalability,Method difficult to apply in large-scale AI systems.
+,,,,,,,,,,Performance,"Accuracy, precision, or coverage issues."
+,,,,,,,,,,Generalizability,Limited to certain AI domains/datasets.
+,,,,,,,,,,Manual effort,Heavy reliance on manual steps.
+,,,,,,,,,,LLM-specific threats,"Not mentioning threats  Like e.g., prompt injection, data leakage, hallucination."
+,,,,,,,,,NOVEL CONTRIBUTIONS,Acknowledge LLM threats,Explicit consideration of threats unique to LLMs.
+,,,,,,,,,,New methodology,Proposes a novel threat modelling methodology.
+,,,,,,,,,,New artifacts,Introduces new supporting artifacts or frameworks.
+,,,,,,,,,,Domain adaptation,Tailors existing methods to AI/ML-specific contexts.
+,,,,,,,,,,General Novel contribution,Any unique contribution not covered above.
