@@ -1,0 +1,38 @@
+﻿OWASP Top-10 for LLMs;M1;M2;M3
+Prompt Injection;NO;"P1;P2;P3;P4";"P1;P2;P3;P4"
+Improper Output Handling;NO;NO;NO
+Data and Model Poisoning;"P1;P2;P3;P4;IF-1.1;IF-2.1;IF-3.1;IF-3.2;IF-4.1";"P1;P2;P3;P4;IF-1.1;IF-2.1;IF-3.1;IF-3.2;IF-4.1";"IF-1.1;I-F-2.1;IF-3.1;IF-3.2;IF-4.1;OF-1.2;OF-2.1; OF-3.1;"
+Sensitive Information Disclosure;"P1;P2;P3;P4";"OF-1.2;OF-2.1;OF-3.1";"P1;P2;P3;P4;OF-1.2;OF-2.1;OF-3.1"
+Supply Chain Vulnerabilities;NO;NO;NO
+Excessive Agency;NO;NO;NO
+System Prompt Leakage;NO;NO;NO
+Vector and Embedding Weaknesses;N/A;N/A;N/A
+Misinformation;NO;NO;NO
+Unbounded Consumption;"P1;P3 (DoS)";"P1;P3 (DoS)";"P1;P3; (DoS)"
+;;;
+;;;
+;;;
+Process;M1;M2;M3
+P1: Process PDFs;"Model Poisoning (Authorized insiders, cybercriminals, opportunistic insiders).
+Model Inversion; Model Evasion; Membership Inference; Model Reuse; Exploration Attacks (Hacktivists, Cybercriminals, Competitors).
+Tamper model metadata (Authorized insiders, opportunistic insiders). DoS";"Model Poisoning; Model Extraction; Evasion Attacks; DoS; Prompt Injection; MiM";"Indirect Prompt Injection; Sensitive Data Output from Model; Model Inversion; Membership Inference; Evasion Attacks; Sponge Attacks; DoS"
+IF-1.1: Email attachments;Tampering/Manipulation during transmission (Cybercriminal);Data poisoning;"Data poisoning; Evasion after data poisoning; Leak Sensitive Input Data"
+OF-1.1: PDF processing status;Tampering/Manipulation during transmission (Cybercriminal);;
+OF-1.2: Attachment metadata;Tampering/Manipulation during transmission (Cybercriminal);Data exfiltration;"Leak sensitive input data; Sensitive data output fom model; Data poisoning; Evasion after data poisoning"
+P2: Process Validated Emails;"Model Poisoning (Authorized insiders, cybercriminals, opportunistic insiders).
+Model Inversion; Model Evasion; Membership Inference; Model Reuse; Exploration Attacks (Hacktivists, Cybercriminals, Competitors).
+Tamper model metadata (Authorized insiders, opportunistic insiders).";"Model Poisoning; Model Extraction; Evasion Attacks; Prompt Injection; MiM";"Indirect Prompt Injection; Sensitive Data Output from Model; Model Inversion; Membership Inference; Evasion Attacks; Sponge Attacks; DoS"
+IF-2.1: Validated emails;"Data manipulation/tampering; Elevation of privilige (Authorized insiders)";Data poisoning;"Data poisoning; Evasion after data poisoning; Leak Sensitive Input Data"
+OF-2.1: Processed email data;Tapering During Storage (Authorized insider);Data exfiltration;"Leak sensitive input data; Sensitive data output fom model; Data poisoning; Evasion after data poisoning"
+OF-2.2: Email processing status;Tampering/Manipulation during transmission (Cybercriminal);;
+P3: Generate Customer Reports;"Model Poisoning (Authorized insiders, cybercriminals, opportunistic insiders).
+Model Inversion; Model Evasion; Membership Inference; Model Reuse; Exploration Attacks (Hacktivists, Cybercriminals, Competitors).
+Tamper model metadata (Authorized insiders, opportunistic insiders). DoS";"Model Poisoning; Model Extraction; Evasion Attacks; DoS; Prompt Injection; MiM";"Indirect Prompt Injection; Sensitive Data Output from Model; Model Inversion; Membership Inference; Evasion Attacks; Sponge Attacks; DoS"
+IF-3.1: Authorization data;"Data manipulation/tampering; Elevation of privilige (Authorized insiders)";Data poisoning;"Data poisoning; Evasion after data poisoning; Leak Sensitive Input Data"
+IF-3.2: Pre-processed records;Tapering During Storage (Authorized insider);Data poisoning;"Data poisoning; Evasion after data poisoning; Leak Sensitive Input Data"
+OF-3.1: Customer reports;Information Disclosure (Cybercriminal);Data exfiltration;"Leak sensitive input data; Sensitive data output fom model; Data poisoning; Evasion after data poisoning"
+P4: Pre-Process Customer Records;"Model Poisoning (Authorized insiders, cybercriminals, opportunistic insiders).
+Model Inversion; Model Evasion; Membership Inference; Model Reuse; Exploration Attacks (Hacktivists, Cybercriminals, Competitors).
+Tamper model metadata (Authorized insiders, opportunistic insiders).";"Model Poisoning; Model Extraction; Evasion Attacks; Prompt Injection;MiM";"Indirect Prompt Injection; Sensitive Data Output from Model; Model Inversion; Membership Inference; Evasion Attacks; Sponge Attacks; DoS"
+IF-4.1: Customer records;"Information Disclosure (Cybercriminal); Tampering/Manipulation during transmission (Cybercriminal)";Data poisoning;"Data poisoning; Evasion after data poisoning; Leak Sensitive Input Data"
+OF-4.2: Pre-processed records;Tapering During Storage (Authorized insider);Data poisoning;
